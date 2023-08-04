@@ -29,38 +29,38 @@ optional arguments:
 
 **Example:**
   ```
-  python check_images.py --dir pet_images/ --arch alexnet --dogfile dognames.txt
+  python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt
   ```
 **Returns** command line output of pet label and classifier label as well as summary statistics including number of images, number of dog/not dog images, percent of correctly matched breeds and total runtime
 ```
-Filename:Golden_retriever_05257.jpg 
-Real:       golden retriever   
-Classifier: afghan hound, afghan  
-PetLabelDog:   1  
+Filename:Dalmatian_04017.jpg
+Real:       dalmatian
+Classifier: dalmatian, coach dog, carriage dog
+PetLabelDog:   1
 ClassLabelDog: 1
 
- Total Images 40 # Matches: 30 # NOT Matches: 10
+ Total Images 40 # Matches: 35 # NOT Matches: 5
 
  ** Statistics from calculates_results_stats() function:
-N Images: 40  N Dog Images: 30  N NotDog Images: 10 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
+N Images: 40  N Dog Images: 30  N NotDog Images: 10
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  93.3
 
  ** Check Statistics - calculated from this function as a check:
-N Images: 40  N Dog Images: 30  N NotDog Images: 10 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
+N Images: 40  N Dog Images: 30  N NotDog Images: 10
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  93.3
 
 
-*** Results Summary for CNN Model Architecture ALEXNET ***
+*** Results Summary for CNN Model Architecture VGG ***
 N Images            :  40
 N Dog Images        :  30
 N Not-Dog Images    :  10
- 
-pct_match           : 75.00%
+
+pct_match           : 87.50%
 pct_correct_dogs    : 100.00%
-pct_correct_breed   : 80.00%
+pct_correct_breed   : 93.33%
 pct_correct_notdogs : 100.00%
 
-** Unformatted Total Elapsed Time: 2.6249983310699463
+** Unformatted Total Elapsed Time: 6.671876430511475
 
-** Total Elapsed Runtime: 0:0:3
+** Total Elapsed Runtime: 0:0:7
 ```
